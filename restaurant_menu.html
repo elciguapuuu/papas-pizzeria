@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papa's Pizzeria</title>
+
+    <!-- Making the page nice -->
+    <style>
+
+        
+        
+        header{
+            display: flex;
+            color:white;
+            background-color: green;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            
+        }
+
+        h2{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        nav{
+            color:red;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding: 45px;
+            margin-left: auto;
+
+
+        }
+        
+        
+        section{
+            margin: 20px;
+        }
+        .menu-container {
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+        .order-container{
+
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        
+        }
+        article {
+            flex:300px;
+            text-align: center;
+            padding: 15px;
+        }
+
+        footer {
+            
+            color:white;
+            background-color: red;
+            text-align: center;
+            padding: 100px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <img id="header-img" src="https://img.poki-cdn.com/cdn-cgi/image/quality=78,width=1200,height=1200,fit=cover,f=png/ae761f5076edbb43161474ecf05a72e1.png" width="100px"/>
+        <h1>Papa's Pizzeria</h1>
+        <nav>
+            <a href="#menu"><b>Menu</b></a>
+            <a href="#order-forum"><b>Order</b></a>
+        </nav>
+    </header>    
+
+    
+    <!-- Menu and Order sections -->
+    <main>
+        <section id="menu">
+            <h2>Menu</h2>
+
+            <!-- Menu container to make styling changes simutaneosly -->
+            <div class="menu-container">
+
+                <article>
+                        <img class="menu-item" src="https://media.istockphoto.com/id/1430787820/vector/special-pizza-cartoon-vector-illustration.jpg?s=612x612&w=0&k=20&c=TXxj6UvaF3RYtFx5b8YUJLytaYnLBLDgLHy-0RQd78Q=" width="225px"/>
+                        <h3>Papito Pepperoni</h3>
+                        <p><i>A pepperoni pizza with bits of beef!</i></p>
+                        <form>
+
+                            <!-- Add items to order -->
+
+                            <label for ="add-items"><input type="number" min="0" max="5" required></label><br>
+                            <p>Any additional items?</p><br>µ
+
+                            <!-- Checkboxes to add additional items -->
+                            <label for="additional-items"><input type="checkbox">Pepperoni</label><br>
+                            <label for="additional-items"><input type="checkbox">Mushrooms</label><br>
+                            <label for="additional-items"><input type="checkbox">Ham</label><br>
+                            <label for="additional-items"><input type="checkbox">Parmesan Cheese</label><br>
+            
+                        </form>
+                </article>
+
+                <br/>
+
+                <article>
+
+                    <img class="menu-item" src="pizza.png" width="225px"/>
+                    <h3>Super Mario Bros.</h3>
+                    <p><i>A ham & mushroom topped pizza!</i></p>
+                    <form>
+
+                        <label for ="add-items"><input type="number" min="0" max="5" required></label><br>
+                        <p>Any additional items?</p><br>
+                        <label for="additional-items"><input type="checkbox">Pepperoni</label><br>
+                        <label for="additional-items"><input type="checkbox">Mushrooms</label><br>
+                        <label for="additional-items"><input type="checkbox">Ham</label><br>
+                        <label for="additional-items"><input type="checkbox">Parmesan Cheese</label><br>
+        
+                    </form>
+                    
+                </article>
+
+                <br/>
+
+                <article>
+                    
+                    <img class="menu-item" src="pizza2.png" width="225px"/>
+                    <h3>Simplemente Italiano</h3>
+                    <p><i>Just a margarita pizza!</i></p>
+                    <form>
+
+                        <label for ="add-items"><input type="number" min="0" max="5" required></label><br>
+                        <p>Any additional items?</p><br>
+                        <label for="additional-items"><input type="checkbox">Pepperoni</label><br>
+                        <label for="additional-items"><input type="checkbox">Mushrooms</label><br>
+                        <label for="additional-items"><input type="checkbox">Ham</label><br>
+                        <label for="additional-items"><input type="checkbox">Parmesan Cheese</label><br>
+        
+                    </form>
+                    
+                </article>
+
+                <br/>
+            </div>
+        </section>
+
+        
+
+        <section id="order-forum">
+            <h2>Place Your Order</h2>
+
+            <!-- Order container to make styling changes simutaneosly -->
+            <div class="order-container">
+            
+                <form>
+                    <h3>Anything in particular we should know? For example allergies, intolerances, etc. </h3><br>
+                    <!-- For the user to add any particular preferences to their order -->
+                    <textarea id="data-entry" rows="7" cols="30" maxlength="250" placeholder="Enter your special needs here!"></textarea><br><br>
+                    <input type="submit" value="Go to Checkout"/>
+
+
+                </form>
+
+            </div>
+        </section>
+
+        <footer>
+            <!-- <3 -->
+            <p><b>Made with love by ssahiroo</b></p>
+        </footer>
+    </main>
+</body>
+</html>
